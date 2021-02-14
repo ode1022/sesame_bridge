@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SesameBridge</string>
+
+    <!-- Preference Titles -->
+    <string name="general_header">一般</string>
+
+    <!-- General Preferences -->
+    <string name="nfc_id_title">NFCのUID</string>
+    <string name="nfc_id_summary">NFCのUIDはタグをかざして設定可能です。\n16進数で7byte表記 コロン区切り(例 0f:d4..) </string>
+</resources>

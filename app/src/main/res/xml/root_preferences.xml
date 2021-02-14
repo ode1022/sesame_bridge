@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/general_header">
+
+        <Preference
+            app:key="nfc_id_label"
+            app:selectable="false"
+            app:persistent="false"
+            app:summary="@string/nfc_id_summary"/>
+        <EditTextPreference
+            app:key="nfc_id"
+            app:title="@string/nfc_id_title"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
