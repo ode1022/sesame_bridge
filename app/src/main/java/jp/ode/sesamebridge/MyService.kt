@@ -32,7 +32,6 @@ class MyService : Service() {
             Log.d("test", "request start")
             var toggled = ""
             if (!request.query.get("toggled").isNullOrEmpty()) {
-                sesameToggle()
                 toggled = """
 <div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
@@ -66,6 +65,7 @@ window.addEventListener('load', function() {
         })
         server.post("/", HttpServerRequestCallback {request, response ->
             Log.d("test", "request start")
+            sesameToggle()
             response.redirect("./?toggled=y")
             Log.d("test", "request end")
         })
